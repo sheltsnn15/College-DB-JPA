@@ -1,0 +1,83 @@
+
+/*
+    Created on : 05-Apr-2021, 17:57:15
+    Author     : Shelton Ngwenya
+*/
+
+.root {
+    -fx-font: 13 arial;
+    -fx-background-image: url('background.png');
+}
+
+.button {
+    -fx-background-color: gray;
+    -fx-text-fill: whitesmoke;
+    -fx-background-radius: 3;
+}
+
+.button:hover {
+    -fx-background-color: teal;
+    -fx-scale-y: 1.1;
+}
+
+.button:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+.toggle-button {
+
+    -fx-background-color: navy;
+    -fx-text-fill: whitesmoke;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #00A170;
+    -fx-text-fill: whitesmoke;
+}
+
+.toggle-button:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+.text-field {
+    -fx-border-color: grey;
+    -fx-border-width: 2;
+    -fx-border-radius: 1;
+}
+
+.text-area {
+    -fx-border-color: grey;
+    -fx-border-width: 2;
+    -fx-border-radius: 1;
+}
+
+
+
+/*
+1. Odd rows with white background color;
+2. ListView: when mouse over an item, highlight with a blue shade;
+3. ListView: when an item is selected, paint it with a gradient;
+4. ListView: when focus is lost from ListView, selected item should be painted with gradient;
+5. ListView: all items will start with text-fill black. But on mouse over and/or selected it will change to white.
+*/
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-scale-x: 0.9;
+}
+
+.list-cell {
+    -fx-text-fill: black;
+}
+
+.list-cell:odd {
+    -fx-background-color: white;
+}
+.list-cell:even {
+    -fx-background-color: whitesmoke;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
