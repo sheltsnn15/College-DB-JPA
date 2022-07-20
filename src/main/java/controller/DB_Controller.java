@@ -32,7 +32,7 @@ public class DB_Controller {
             ResultSet resultSet = databaseMetadata.getTables(null, null, "Student", null);
             ResultSet resultSet1 = databaseMetadata.getTables(null, null, "Module", null);
 
-            //if (Field_Validation.isTableExist(connection, "Student") && Field_Validation.isTableExist(connection, "Module")) {
+            if (Field_Validation.isTableExist(connection, "Student") && Field_Validation.isTableExist(connection, "Module")) {
 
                 if (!resultSet.next()) {
                     Statement statement = connection.createStatement();
@@ -57,7 +57,7 @@ public class DB_Controller {
                             ")"
                     );
                 }
-            //}
+            }
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
             System.exit(1);
