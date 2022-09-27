@@ -16,7 +16,6 @@ public class DB_Controller {
     private static final String PASSWORD = "";
     private static EntityManagerFactory ENTITY_MANAGER_FACTORY;
 
-
     private Connection connection = null; // manages connection
 
     /**
